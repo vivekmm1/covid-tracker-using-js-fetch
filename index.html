@@ -28,9 +28,9 @@
 </div>  
 </body>
 <script>
-
-    document.getElementById('getData').addEventListener('click',getText)
-    function getText(){
+   getText()
+   document.getElementById('getData').addEventListener('click',getText)
+   function getText(){
         //call the fetch function
         fetch('https://api.covid19api.com/summary')
     .then(res => res.json())//response type
